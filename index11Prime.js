@@ -1,11 +1,13 @@
 
-console.log('The prime number 1 to 200 is : ')
+console.log('The prime number between 1 to 10 is : ');
 
 
-for (var i=2; i<=100; i++){
+number=10;
+
+for (var i=2; i<=number; i++){
     
     for (var j=2; j<=i;j++){
-        if(i%j==0){
+         if(i%j==0){
             
             break;
         }
