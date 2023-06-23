@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validation Form</title>
+</head>
+<body>
+
+
+
+
+
+    <h2>Ragistration form</h2>
+
+    <input type="text" name="username" placeholder="Username" id="name"> <br> <br>
+
+    <input type="password" placeholder="password" id="password"> <br> <br>
+
+    <input type="email" name="email" placeholder="Enteremail" id="email"> <br> <br>
+
+    <button id="submitBtn" onclick="handelBtn()">Submit</button>
+
+    <ul id="list">
+
+    </ul>
+    
+</body>
+
+<script>
+    function handelBtn(){
+        var name = document.getElementById('name').value;
+
+        var password = document.getElementById('password').value;
+
+        var email = document.getElementById('email').value;
+
+        var list = document.getElementById('list');
+
+        var node = document.createElement('li');
+
+        var textnode = document.createTextNode(name);
+
+        
+
+        node.appendChild(textnode);
+
+        document.getElementById('list').appendChild(node);
+
+        console.log(name,password,email);
+
+        
+
+        
+
+    }
+</script>
+</html>

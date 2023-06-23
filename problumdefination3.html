@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set interval Method</title>
+</head>
+<body>
+
+    <h1>The Window Object</h1>
+    <h2>The SetInterval Method</h2>
+    <p id="demo"></p>
+
+    <script>
+        // const element = document.getElementById('demo');
+        // setInterval(
+        //     function(){
+        //         element.innerHTML+= "hello "
+        //     },3000
+        // );
+
+        setInterval(display,2000);
+
+        function display(){
+            document.getElementById('demo').innerHTML+="  Shaikh Aavez  ";
+        }
+    </script>
+    
+</body>
+</html>
