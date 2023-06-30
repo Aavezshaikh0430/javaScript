@@ -32,7 +32,7 @@ form.push('aavez');
 form[4]=' ';
 form[5]=null;
 console.log(form);
-var length=cars.length();
+// var length=cars.length();
 
 //javascript objects
 

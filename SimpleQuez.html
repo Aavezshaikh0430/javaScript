@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz </title>
+</head>
+<body>
+Q1.WHAT IS 5+7? <br>
+<input type="radio" name="question1">5 <br>
+<input type="radio" name="question1">17 <br>
+<input type="radio" name="question1" id="correct1">12 <br>
+<input type="radio" name="question1">15 <br>
+<br>
+
+Q2.Which of the following is not a primitive data type in JavaScript?<br>
+<input type="radio" name="question2">string <br>
+<input type="radio" name="question2" id="correct2">array <br>
+<input type="radio" name="question2">number <br>
+<input type="radio" name="question2">boolean <br>
+<br>
+
+Q3.Which method is used to select an HTML element by ID in Javascript?<br>
+<input type="radio" name="question3">getElement() <br>
+<input type="radio" name="question3">selectElement() <br>
+<input type="radio" name="question3">querySlector() <br>
+<input type="radio" name="question3" id="correct3">getElementById() <br>
+<br>
+
+Q4.How can a datatype be declared to be a constant type?<br>
+<input type="radio" name="question4" id="correct4">const <br>
+<input type="radio" name="question4">var <br>
+<input type="radio" name="question4">let <br>
+<input type="radio" name="question4">constant<br>
+<br>
+
+Q5.which of the following properties is used to change the font of text?<br>
+
+<input type="radio" name="question5">font-size<br>
+<input type="radio" name="question5" id="correct5">font-family <br>
+<input type="radio" name="question5">text-align <br>
+<input type="radio" name="question5">Non of the above <br>
+<br>
+
+
+<input type="submit" name="submit" value="SubmitQuiz" onclick="result()">
+
+<script>
+    function result(){
+        let score = 0;
+        if(document.getElementById('correct1').checked){
+            score++;
+
+        }
+        if(document.getElementById('correct2').checked){
+            score++;
+
+        }
+        if(document.getElementById('correct3').checked){
+            score++;
+
+        }
+        if(document.getElementById('correct4').checked){
+            score++;
+
+        }
+        if(document.getElementById('correct5').checked){
+            score++;
+
+        }
+        
+
+        document.write("Your score is "+ score);
+        
+    }
+</script>
+
+    
+</body>
+</html>

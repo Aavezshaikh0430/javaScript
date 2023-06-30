@@ -1,35 +1,35 @@
 //1st CountVowels
 
-let str = 'Daynamic Coding with Aavez.';
+// let str = 'Daynamic Coding with Aavez.';
 
-let count =0;
+// let count =0;
 
-const vowels = ['a','e','i','o','u'];
+// const vowels = ['a','e','i','o','u'];
 
-for(let s of str.toLowerCase()){
-    if(vowels.includes(s)){
-        count++;
-    }
-}
-console.log(count);
-
-
-
-
-// 2.problem
-
-let a=10;
-let b=20;
-
-c=a;
-a=b;
-b=a;
-b=c;
+// for(let s of str.toLowerCase()){
+//     if(vowels.includes(s)){
+//         count++;
+//     }
+// }
+// console.log(count);
 
 
 
-console.log('a='+a);
-console.log('b='+b);
+
+// // 2.problem
+
+// let a=10;
+// let b=20;
+
+// c=a;
+// a=b;
+// b=a;
+// b=c;
+
+
+
+// console.log('a='+a);
+// console.log('b='+b);
 
 //or
 // a=a+10;
@@ -54,21 +54,30 @@ console.log('b='+b);
 
 
 
-let value = "MuskSum";
+// let value = "MuskSum";
 
-const revVlaue = ()=> {
-    let myStrVal= value.toString().toLowerCase();
-    let myRevVal = value.toString().split('').reverse().join('').toLowerCase();
+// const revVlaue = ()=> {
+//     let myStrVal= value.toString().toLowerCase();
+//     let myRevVal = value.toString().split('').reverse().join('').toLowerCase();
     
-   if(myStrVal==myRevVal){
-    console.log('is Palindrome.');
-   } else{
-    console.log('Not a palindrome.')
-   } 
+//    if(myStrVal==myRevVal){
+//     console.log('is Palindrome.');
+//    } else{
+//     console.log('Not a palindrome.')
+//    } 
     
-};
+// };
 
-revVlaue();
+// revVlaue();
+
+
+
+var foo =1; 
+function myfun(){
+    console.log(foo);
+    var foo =2;
+}
+myfun();
 
 
 

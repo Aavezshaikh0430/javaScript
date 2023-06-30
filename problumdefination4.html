@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validation form</title>
+</head>
+<body>
+    <input type="text" placeholder="Enter Username" id="username"> <br><br>
+    <input type="email" placeholder="Enter Email" id="email"><br><br>
+    <input type="password" placeholder="Enter password" id="password"><br><br>
+    <input type="password" placeholder="conform Email" id="conformpassword"><br><br>
+
+    <button onclick="submithandlebtn()">Submit</button>
+    <div>
+        <ul id="list"></ul>
+    </div>
+
+    
+    <script>
+        function submithandlebtn(){
+            var username = document.getElementById('username').value;
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+            var conformpassword = document.getElementById('conformpassword').value;
+
+            var list = document.getElementById('list');
+            var element = document.createElement('li');
+            var text = document.createTextNode(username);
+            var text = document.createTextNode(email);
+            element.appendChild(text);
+
+            list.appendChild(element);
+
+            
+            console.log(username,email,password,conformpassword);
+        }
+
+    </script>
+</body>
+</html>

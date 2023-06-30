@@ -23,7 +23,7 @@
                     <input type="number" placeholder="Enter phone number" id="number" required><br> <br>
                     <input type="number" placeholder="Enter pincode" id="pincode" required><br> <br>
                     
-                    <button id="content2-form-btn" on>Enroll now</button>
+                    <button id="content2-form-btn" onsubmit="">Enroll now</button>
 
                 </form>
 
@@ -32,6 +32,10 @@
         </div>
 
     </div>
+    </div>
+
+    <div>
+        <ul id="list"></ul>
     </div>
 
 
@@ -44,15 +48,38 @@
         var email = document.getElementById('email').value;
         var number = document.getElementById('number').value;
         var pincode = document.getElementById('pincode').value;
-        
 
-        if(username === ''){
-            console.log('Enter valid Username');
-            document.getElementById
-        }
+        var list = document.getElementById('list');
+        var element = document.createElement('li');
         
+        var text = document.createTextNode("Username: " + username);
+        element.appendChild(text);
+        list.appendChild(element);
         
+        var element2 = document.createElement('li');
+        var text2 = document.createTextNode("Email: " + email);
+        element2.appendChild(text2);
+        list.appendChild(element2);
+        
+        var element3 = document.createElement('li');
+        var text3 = document.createTextNode("Number: " + number);
+        element3.appendChild(text3);
+        list.appendChild(element3);
+        
+        var element4 = document.createElement('li');
+        var text4 = document.createTextNode("Pincode: " + pincode);
+        element4.appendChild(text4);
+        list.appendChild(element4);
+        
+        console.log("Username:", username);
+        console.log("Email:", email);
+        console.log("Number:", number);
+        console.log("Pincode:", pincode);
     }
+</script>
+
+        
+    
 
 </script>
 
